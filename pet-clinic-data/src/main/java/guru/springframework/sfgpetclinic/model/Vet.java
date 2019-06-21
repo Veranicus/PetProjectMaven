@@ -3,6 +3,7 @@ package guru.springframework.sfgpetclinic.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -12,6 +13,6 @@ import java.util.Set;
 @NoArgsConstructor
 public class Vet extends Person {
 
-    private Set<Speciality> specialities;
+    private Set<Speciality> specialities = new HashSet<>();
 
 }
