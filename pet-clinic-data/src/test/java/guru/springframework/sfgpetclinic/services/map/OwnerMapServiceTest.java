@@ -62,6 +62,7 @@ class OwnerMapServiceTest {
     void deleteById() {
         ownerMapService.deleteById(ownerId);
         assertEquals(0, ownerMapService.findAll().size());
+//        fsd
     }
 
     @Test
